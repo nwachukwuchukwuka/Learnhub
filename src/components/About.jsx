@@ -1,19 +1,19 @@
 import React from "react";
 import about1 from "../assets/about1.webp";
+import learning from "../assets/learning.jpg";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll"; // Import react-scroll
 
 const About = () => {
   const scrollToCategories = () => {
-    // Scroll to the "categories" section with a smooth effect
     scroll.scrollTo("categories-section", {
-      duration: 800, // Adjust the duration as needed
-      smooth: "easeInOutQuart", // Choose the easing function
+      duration: 800, 
+      smooth: "easeInOutQuart", 
     });
   };
 
   return (
     <div>
-      <section className="max-w-[90%] mx-auto flex flex-col lg:flex-row justify-between mt-[70px] items-center pb-[100px] ">
+      <section className="max-w-[90%] mx-auto flex flex-col lg:flex-row justify-between mt-[70px] items-center pb-[70px] md:pb-[100px] ">
         <div className="mr-0 lg:mr-[60px] text-center lg:text-left">
           <h1 className="font-bold mb-[20px] text-lg">WHAT IS LEARNHUB?</h1>
           <p className="text-gray-800">
@@ -51,7 +51,7 @@ const About = () => {
         <div className="mt-4 lg:mt-0">
           <img
             className="w-[2600px] lg:w-[2000px] h-[300px] object-cover"
-            src={about1}
+            src={learning}
             alt="about"
           />
         </div>
