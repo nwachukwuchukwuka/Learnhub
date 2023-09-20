@@ -1,5 +1,4 @@
 import React from "react";
-import about from "../assets/about.jpg";
 import about1 from "../assets/about1.webp";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll"; // Import react-scroll
 
@@ -51,8 +50,8 @@ const About = () => {
 
         <div className="mt-4 lg:mt-0">
           <img
-            className="w-full lg:w-[2000px] h-[300px] object-cover"
-            src={about}
+            className="w-[2600px] lg:w-[2000px] h-[300px] object-cover"
+            src={about1}
             alt="about"
           />
         </div>
